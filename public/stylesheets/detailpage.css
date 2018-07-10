@@ -34,6 +34,15 @@ body {
     opacity: 50%;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100%;
+}
+
+.content-wrap {
+    padding-bottom: 20px;
+}
+
 .navbar {
     z-index: 2;
 }
@@ -44,8 +53,13 @@ body {
     float: right;
 }
 
+.nav-item:hover, .navbar-toggler:hover {
+    background-color: grey;
+    height: 100%;
+}
+
 .ul-container {
-    display: flex;
+    display: none;
     flex-flow: row wrap;
     width: 100%;
     justify-content: center;
@@ -61,6 +75,12 @@ body {
     width: 100%; 
     padding: 5px;
     padding-bottom: 0px;
+}
+
+.letterdropdown {
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .a-images {
@@ -127,8 +147,8 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    position: relative;
-    bottom: 3px;
+    position: absolute;
+    bottom: 0px;
     right: 5px;
     height: 20px;
 }
@@ -219,3 +239,33 @@ a {
     height: 100%;
 }
 
+.pagination-container {
+    
+}
+
+@media screen and (min-width: 360px) {
+    .ul-container {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .ul-container {
+        display: none;
+    }
+
+    .letterdropdown {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .letterdropdown {
+        display: none;
+    }
+
+    .ul-container {
+        display: flex;
+    }
+
+}
