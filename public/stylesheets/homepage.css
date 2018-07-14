@@ -15,9 +15,20 @@ body {
     width: 100%;
     height: 100%;
     color: aliceblue;
-    /* min-height: 100%; */
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
     /* position: relative; */
-    /* background-color: black; */
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 20px;
 }
 
 .background {
@@ -29,14 +40,16 @@ body {
     height: 100%;
     background-image: url(../images/marvelbg2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
+    background-repeat: no-repeat;
     z-index: -1;
     opacity: 50%;
 }
 
-.navbar {
-    z-index: 2;
+body {
+    background-color: black;
 }
+
 
 .float-right {
     display: flex;
@@ -45,11 +58,12 @@ body {
 }
 
 
-.nav-item:hover,
+/* .nav-item:hover,
 .navbar-toggler:hover {
     background-color: grey;
     height:100%;
-}
+} */
+
 
 .main-container {
     width: 100%;
@@ -134,7 +148,7 @@ body {
 }
 
 
-a, a:hover{
+.search-name, .search-name:hover{
     color: aliceblue;
     text-decoration: none;
     text-decoration-color: none;
